@@ -1,27 +1,39 @@
-# BuzzFeed
+# BuzzFeed - Gabriel Navarro
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.1.
+![Static Badge](https://img.shields.io/badge/TypeScript-purple)
+![Static Badge](https://img.shields.io/badge/Angular-purple)
+![Static Badge](https://img.shields.io/badge/SCSS-purple)
 
-## Development server
+![Captura de tela 2023-12-03 135045]()
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## :smile: Descrição
 
-## Code scaffolding
+Quiz onde com base nas suas respostas você descobre se você seria um vilão ou um herói.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### [Clique aqui para ver a aplicação no ar](https://buzz-feed-quizz.netlify.app/)
 
-## Build
+### [Clique aqui para ver o repositório da aplicação](https://github.com/Navarriin/BuzzFeed.git)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+---
 
-## Running unit tests
+## :pushpin: Como Utilizar
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### 1. Clone o repositório
 
-## Running end-to-end tests
+```
+git clone https://github.com/Navarriin/BuzzFeed.git
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### 2. Instale as dependencias
 
-## Further help
+```
+npm install
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### 3. Suba a aplicação
+
+```
+ng serve
+```
+
+Após realizar esta sequência de passos a aplicação já estará pronta para ser utilizada na porta -> http://localhost:4200/
