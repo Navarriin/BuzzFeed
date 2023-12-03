@@ -4,7 +4,8 @@
 ![Static Badge](https://img.shields.io/badge/Angular-purple)
 ![Static Badge](https://img.shields.io/badge/SCSS-purple)
 
-![Captura de tela 2023-12-03 135045]()
+![Print do projeto](https://github.com/Navarriin/BuzzFeed/assets/139160874/9682f6c5-9e91-4528-81db-b384d32d135f)
+
 
 ## :smile: Descrição
 
