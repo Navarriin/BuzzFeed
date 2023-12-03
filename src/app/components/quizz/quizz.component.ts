@@ -16,36 +16,62 @@ export class QuizzComponent {
   questions: any;
   questionSelected: any;
 
-  answers: string[] = [];
+  hero: string[] = [];
+  vilan: string[] = [];
   answerSelected: string = '';
 
   questionIndex: number = 0;
   questionMaxIndex!: number;
 
+  starter: boolean = true;
   finished: boolean = false;
 
   ngOnInit(): void {
     if (quizz_questions) {
       this.title = quizz_questions.title;
-
       this.questions = quizz_questions.questions;
+
       this.loadQuestions();
 
-      this.questionMaxIndex = this.questions.length;
+      this.questionMaxIndex = this.questions.length - 1;
     }
   }
 
   nextQuestion(alias: string): void {
-    if (this.questionIndex < this.questionMaxIndex) this.questionIndex += 1;
-    this.answers.push(alias);
-    this.loadQuestions();
+    if (this.questionIndex < this.questionMaxIndex) {
+      this.questionIndex += 1;
+      this.loadQuestions();
+
+      if (alias === 'B') {
+        this.hero.push(alias);
+      } else {
+        this.vilan.push(alias);
+      }
+    } else if (this.questionIndex === this.questionMaxIndex) {
+      this.result();
+      this.starter = false;
+      this.finished = true;
+    }
   }
 
   loadQuestions(): void {
     this.questionSelected = this.questions[this.questionIndex];
-
-    if (this.questionIndex === this.questionMaxIndex) this.finished = true;
   }
 
-  result(): void {}
+  result(): void {
+    if (this.hero.length > this.vilan.length) {
+      this.answerSelected = quizz_questions.results.B;
+    } else {
+      this.answerSelected = quizz_questions.results.A;
+    }
+  }
+
+  resetGame(): void {
+    this.hero = [];
+    this.vilan = [];
+    this.questionIndex = 0;
+    this.starter = true;
+    this.finished = false;
+    this.loadQuestions();
+  }
 }
