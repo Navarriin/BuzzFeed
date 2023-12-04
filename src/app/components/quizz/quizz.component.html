@@ -8,10 +8,12 @@
             <h3>{{ questionSelected.question }}</h3>
         </div>
         <div class="quizz__container__options display__flex">
-            <button class="quizz__container__options__btn"
-                *ngFor="let option of questionSelected.options; let i = index" (click)="nextQuestion(option.alias)">
-                {{ option.name }}
-            </button>
+            <ul *ngFor="let option of questionSelected.options; let i = index" (click)="nextQuestion(option.alias)">
+                <li>
+                    <button class="quizz__container__options__btn display__flex">{{ option.name }}</button>
+                </li>
+            </ul>
+
         </div>
     </div>
     <div *ngIf="finished" class="quizz__container__results display__flex">

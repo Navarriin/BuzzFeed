@@ -1,4 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --background-purple: #1f1147;
+  --purple: #4224d9;
+  --dark-purple: #1f0539;
+  --light-purple: #644ed2;
+  --white: #ffffff;
+  --green: #18ab29;
+  --dark-green: #2f6627;
+  --lemon-green: #5cbf2a;
+}
+
 * {
   font-family: "Segoe UI", sans-serif;
   box-sizing: border-box;
@@ -8,5 +19,5 @@
 
 body {
   color: antiquewhite;
-  background-color: #1f1147;
+  background-color: var(--background-purple);
 }
