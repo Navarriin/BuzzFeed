@@ -3,7 +3,7 @@
         <img src="assets/images/logo.png" alt="Logo da página">
         <h3>{{ title }}</h3>
     </div>
-    <div *ngIf="starter">
+    <div *ngIf="!finished">
         <div class="quizz__container__questions display__flex">
             <h3>{{ questionSelected.question }}</h3>
         </div>
